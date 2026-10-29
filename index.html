@@ -1,0 +1,1704 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111d2b">
+<meta name="description" content="JJR Contábil, nome fantasia de Pagnoncelli & Battistin Assessoria Contábil S/S. Dados institucionais e localização em Pato Branco, PR.">
+<meta name="author" content="PAGNONCELLI & BATTISTIN ASSESSORIA CONTABIL S/S">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JJR Contábil">
+<meta property="og:title" content="JJR Contábil | Pagnoncelli & Battistin">
+<meta property="og:description" content="Informações institucionais e endereço da organização.">
+
+<title>JJR Contábil | Pagnoncelli & Battistin Assessoria Contábil</title>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "PAGNONCELLI & BATTISTIN ASSESSORIA CONTABIL S/S",
+  "alternateName": "JJR Contábil",
+  "identifier": "19.660.959/0001-81",
+  "telephone": "+55 46 3027-0726",
+  "email": "roberto@jjrcontabilpb.com.br",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R CAETANO MUNHOZ DA ROCHA, 570, MENINO DEUS",
+    "addressLocality": "Pato Branco",
+    "addressRegion": "PR",
+    "postalCode": "85502-190",
+    "addressCountry": "BR"
+  }
+}
+</script>
+
+<style>
+:root {
+  --navy: #111d2b;
+  --navy2: #192a3c;
+  --gold: #d6ad78;
+  --gold-light: #f0c38c;
+  --text: #233244;
+  --muted: #687585;
+  --cream: #faf8f4;
+  --line: #e4e8eb;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: #ffffff;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.container {
+  width: min(1150px, calc(100% - 40px));
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: clamp(34px, 5vw, 55px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin: 15px 0 25px;
+}
+
+p {
+  color: var(--muted);
+}
+
+.eyebrow {
+  color: #b48751;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button-gold {
+  background: var(--gold-light);
+  color: var(--navy);
+}
+
+.button-outline {
+  border: 1px solid #84909e;
+  color: white;
+}
+
+.button-dark {
+  background: var(--navy);
+  color: white;
+}
+
+/* CABEÇALHO */
+
+header {
+  background: rgba(255,255,255,.97);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+}
+
+.header-content {
+  min-height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.logo-icon {
+  background: var(--navy);
+  color: var(--gold-light);
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: .6px;
+  line-height: 1.35;
+}
+
+.logo-text small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #8994a0;
+  margin-top: 4px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav a {
+  font-size: 13px;
+  font-weight: bold;
+  color: #465568;
+}
+
+nav a:hover {
+  color: #b48751;
+}
+
+.menu-button {
+  display: none;
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  color: var(--navy);
+}
+
+/* HERO */
+
+.hero {
+  background: var(--navy);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 75% 40%,
+      rgba(214,175,120,.14), transparent 40%),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 95px,
+      rgba(255,255,255,.025) 96px 97px
+    );
+}
+
+.hero-content {
+  min-height: 620px;
+  padding: 85px 0;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 5.7vw, 82px);
+  letter-spacing: -3px;
+  line-height: 1.05;
+  margin: 30px 0;
+  overflow-wrap: anywhere;
+}
+
+.hero h1 span {
+  color: var(--gold-light);
+}
+
+.hero p {
+  color: #ccd5dd;
+  font-size: 17px;
+  max-width: 520px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.hero-note {
+  margin-top: 45px;
+  color: #aab9c7;
+  font-size: 12px;
+}
+
+.hero-art {
+  min-height: 420px;
+  border: 1px solid rgba(214,175,120,.35);
+  border-radius: 50% 50% 5% 5%;
+  background:
+    radial-gradient(circle at center,
+      rgba(215,174,115,.13), transparent 65%),
+    linear-gradient(150deg, #26394d, #111d2b);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 25px;
+}
+
+.hero-art-card {
+  background: #faf8f4;
+  color: var(--navy);
+  padding: 30px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.2);
+}
+
+.hero-art-card small {
+  color: #aa8051;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.hero-art-card h3 {
+  font-size: 30px;
+  margin: 12px 0;
+}
+
+.hero-art-card p {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* INFORMAÇÕES RÁPIDAS */
+
+.quick-info {
+  background: var(--cream);
+  border-bottom: 1px solid #eee8dd;
+}
+
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.quick-item {
+  padding: 28px 18px;
+  border-right: 1px solid #e7e0d6;
+}
+
+.quick-item:last-child {
+  border: none;
+}
+
+.quick-item small {
+  display: block;
+  color: #8d96a0;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.quick-item strong {
+  font-size: 14px;
+  color: var(--navy);
+}
+
+/* IDENTIFICAÇÃO */
+
+.verification {
+  background: #ffffff;
+}
+
+.verification-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 850px;
+  box-shadow: 0 15px 40px rgba(17,29,43,.05);
+}
+
+.field-label {
+  display: block;
+  font-size: 14px;
+  color: #6d7886;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.organization-name {
+  font-size: clamp(28px, 4vw, 40px);
+  color: var(--navy);
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.verified-date {
+  font-size: 14px;
+  margin: 0;
+}
+
+.verification-card hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 30px 0;
+}
+
+.organization-address {
+  font-style: normal;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+/* SOBRE */
+
+.about {
+  background: var(--cream);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-art {
+  min-height: 380px;
+  background: linear-gradient(135deg, #eadcc8, #bea88e);
+  border-radius: 5px;
+  display: flex;
+  align-items: end;
+  padding: 35px;
+  overflow: hidden;
+}
+
+.about-art span {
+  color: #5b4b3b;
+  font-family: Georgia, serif;
+  font-size: 65px;
+  line-height: 1;
+  opacity: .45;
+}
+
+.about-text p {
+  font-size: 16px;
+}
+
+.about-detail {
+  border-top: 1px solid #dededb;
+  padding-top: 20px;
+  margin-top: 25px;
+}
+
+.about-detail strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* CARDS */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 45px;
+}
+
+.card {
+  border: 1px solid var(--line);
+  background: white;
+  padding: 35px;
+  border-radius: 7px;
+  transition: .25s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(17,29,43,.06);
+}
+
+.card-number {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #ae8454;
+  font-weight: bold;
+}
+
+.card-icon {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #f6f0e8;
+  color: #987349;
+  font-size: 25px;
+  margin: 25px 0;
+}
+
+.card h3 {
+  font-size: 25px;
+  color: var(--navy);
+}
+
+.card p {
+  font-size: 14px;
+}
+
+/* DIVISOR */
+
+.statement {
+  background: var(--navy);
+  color: white;
+  padding: 75px 0;
+}
+
+.statement h2 {
+  max-width: 850px;
+}
+
+.statement h2 span {
+  color: var(--gold-light);
+}
+
+/* ENDEREÇO */
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.address-box {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 25px 0;
+  margin: 30px 0;
+}
+
+.address-box small {
+  color: #a47c4e;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.address-box address {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.map-box {
+  min-height: 400px;
+  background:
+    repeating-linear-gradient(
+      35deg,
+      #e7ebed 0 45px,
+      #d4dce0 46px 48px,
+      #e7ebed 49px 95px
+    );
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  padding: 25px;
+}
+
+.map-card {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.12);
+  width: min(300px, 100%);
+}
+
+.map-pin {
+  font-size: 34px;
+  color: #ae8454;
+}
+
+.map-card h3 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.map-card p {
+  font-size: 13px;
+}
+
+/* PERGUNTAS */
+
+.faq {
+  background: var(--cream);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 65px;
+}
+
+details {
+  border-bottom: 1px solid #dcdedc;
+  padding: 20px 0;
+}
+
+summary {
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--navy);
+}
+
+details p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* RODAPÉ */
+
+footer {
+  background: var(--navy);
+  color: white;
+  padding: 70px 0 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .6fr .9fr;
+  gap: 50px;
+}
+
+.footer-grid p {
+  color: #aebcca;
+  font-size: 13px;
+}
+
+footer h4 {
+  color: var(--gold-light);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a,
+.footer-links button {
+  color: #bcc8d3;
+  background: none;
+  border: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 13px;
+}
+
+.footer-links a:hover,
+.footer-links button:hover {
+  color: var(--gold-light);
+}
+
+footer address {
+  color: #bcc8d3;
+  font-size: 13px;
+  font-style: normal;
+}
+
+.footer-bottom {
+  border-top: 1px solid #354352;
+  margin-top: 55px;
+  padding-top: 25px;
+  color: #8c9bac;
+  font-size: 12px;
+}
+
+/* MODAL */
+
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10,20,32,.75);
+  z-index: 200;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-backdrop.open {
+  display: flex;
+}
+
+.modal {
+  position: relative;
+  width: min(700px, 100%);
+  max-height: 85vh;
+  overflow-y: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.modal h2 {
+  font-size: 32px;
+}
+
+.modal p {
+  font-size: 14px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 23px;
+}
+
+/* COOKIES */
+
+.cookie-banner {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: min(440px, calc(100% - 40px));
+  background: white;
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.15);
+  z-index: 150;
+}
+
+.cookie-banner.show {
+  display: block;
+}
+
+.cookie-banner p {
+  font-size: 12px;
+}
+
+.cookie-banner button {
+  border: 0;
+  padding: 10px 18px;
+  background: var(--navy);
+  color: white;
+  border-radius: 5px;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 900px) {
+  .hero-content,
+  .about-grid,
+  .location-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    gap: 30px;
+  }
+
+  .hero-art {
+    min-height: 300px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 760px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .header-content {
+    min-height: 75px;
+  }
+
+  .logo-text {
+    font-size: 12px;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    gap: 18px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  .hero-content {
+    padding: 65px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(35px, 8.5vw, 55px);
+    letter-spacing: -2px;
+  }
+
+  .quick-grid,
+  .cards-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-item {
+    border-right: 0;
+    border-bottom: 1px solid #e7e0d6;
+  }
+
+  .verification-card {
+    padding: 25px;
+  }
+
+  .about-art {
+    min-height: 250px;
+  }
+
+  .map-box {
+    min-height: 300px;
+  }
+
+  .modal {
+    padding: 30px 22px;
+  }
+}
+
+@media(prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- CABEÇALHO -->
+
+<header>
+  <div class="container header-content">
+
+    <a href="#top" class="logo">
+      <span class="logo-icon">JJR</span>
+      <span class="logo-text">
+        JJR CONTÁBIL
+        <small>INFORMAÇÕES DA EMPRESA</small>
+      </span>
+    </a>
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="mainNav"
+      type="button">☰</button>
+
+    <nav id="mainNav">
+      <a href="#sobre">Sobre</a>
+      <a href="#informacoes">Informações</a>
+      <a href="#verificacao">Organização</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<!-- APRESENTAÇÃO -->
+
+<section id="top" class="hero">
+  <div class="container hero-content">
+
+    <div>
+      <div class="eyebrow">
+        Pato Branco · Paraná · Brasil
+      </div>
+
+      <h1>
+        JJR<br>
+        <span>CONTÁBIL.</span>
+      </h1>
+
+      <p>
+        Conheça a JJR Contábil, nome fantasia de Pagnoncelli &amp; Battistin
+        Assessoria Contábil S/S. Informações institucionais,
+        atividades contábeis e endereço em Pato Branco, Paraná.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#sobre" class="button button-gold">
+          Saiba mais →
+        </a>
+
+        <a href="#localizacao" class="button button-outline">
+          Endereço da empresa →
+        </a>
+      </div>
+
+      <div class="hero-note">
+        Site institucional informativo
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="hero-art-card">
+        <small>Localização cadastrada</small>
+        <h3>Pato Branco, Paraná</h3>
+        <p>Brasil</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- INFORMAÇÕES RÁPIDAS -->
+
+<div class="quick-info">
+  <div class="container quick-grid">
+
+    <div class="quick-item">
+      <small>Nome da organização</small>
+      <strong>PAGNONCELLI & BATTISTIN ASSESSORIA CONTABIL S/S</strong>
+    </div>
+
+    <div class="quick-item">
+      <small>Cidade e estado</small>
+      <strong>Pato Branco, PR</strong>
+    </div>
+
+    <div class="quick-item">
+      <small>País</small>
+      <strong>Brasil</strong>
+    </div>
+
+  </div>
+</div>
+
+<!-- DADOS DA ORGANIZAÇÃO -->
+
+<section id="verificacao" class="section verification">
+  <div class="container">
+
+    <div class="eyebrow">
+      Identificação empresarial
+    </div>
+
+    <h2>Dados da organização.</h2>
+
+    <div class="verification-card">
+
+      <span class="field-label">
+        Nome da organização
+      </span>
+
+      <h3 class="organization-name">
+        PAGNONCELLI & BATTISTIN ASSESSORIA CONTABIL S/S
+      </h3>
+
+      <p class="verified-date">
+        Verificado em 19 de out. de 2026
+      </p>
+
+      <hr>
+
+      <span class="field-label">
+        Endereço da organização
+      </span>
+
+      <address class="organization-address">
+        R CAETANO MUNHOZ DA ROCHA, 570<br>
+        MENINO DEUS<br>
+        PATO BRANCO - PR<br>
+        85502-190<br>
+        Brasil
+      </address>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE A EMPRESA -->
+
+<section id="sobre" class="section about">
+  <div class="container about-grid">
+
+    <div class="about-art">
+      <span>JJR</span>
+    </div>
+
+    <div class="about-text">
+
+      <div class="eyebrow">
+        Sobre a organização
+      </div>
+
+      <h2>
+        Informações essenciais.<br>
+        Fáceis de encontrar.
+      </h2>
+
+      <p>
+        A JJR Contábil é o nome fantasia de Pagnoncelli &amp; Battistin
+        Assessoria Contábil S/S, escritório de contabilidade
+        localizado em Pato Branco, Paraná.
+      </p>
+
+      <p>
+        CNPJ: 19.660.959/0001-81<br>
+        Data de abertura: 05/02/2014<br>
+        Natureza jurídica: Sociedade Simples Pura<br>
+        Atividade principal: Serviços de contabilidade
+      </p>
+
+      <div class="about-detail">
+        <strong>01 — Identificação da empresa</strong>
+        <p>
+          Nome empresarial e CNPJ apresentados
+          de forma clara.
+        </p>
+      </div>
+
+      <div class="about-detail">
+        <strong>02 — Dados para correspondência</strong>
+        <p>
+          Endereço da organização disponível
+          para consulta.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INFORMAÇÕES -->
+
+<section id="informacoes" class="section">
+  <div class="container">
+
+    <div class="eyebrow">
+      Informações úteis
+    </div>
+
+    <h2>O que você encontra aqui.</h2>
+
+    <p>
+      Uma página institucional para facilitar o acesso
+      às principais informações da organização.
+    </p>
+
+    <div class="cards-grid">
+
+      <article class="card">
+        <span class="card-number">01 / PERFIL</span>
+        <div class="card-icon">▤</div>
+        <h3>Perfil empresarial</h3>
+        <p>
+          Consulte o nome da organização,
+          o CNPJ e os dados empresariais.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="card-number">02 / LOCALIZAÇÃO</span>
+        <div class="card-icon">⌖</div>
+        <h3>Endereço cadastrado</h3>
+        <p>
+          Veja o endereço da empresa em
+          Pato Branco, Paraná.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="card-number">03 / POLÍTICAS</span>
+        <div class="card-icon">≡</div>
+        <h3>Políticas do site</h3>
+        <p>
+          Consulte as informações de privacidade,
+          cookies e termos de uso.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAIXA INSTITUCIONAL -->
+
+<aside class="statement">
+  <div class="container">
+
+    <div class="eyebrow">
+      Nossa presença digital
+    </div>
+
+    <h2>
+      Um canal de consulta a
+      <span>informações empresariais</span>
+      e dados para correspondência.
+    </h2>
+
+  </div>
+</aside>
+
+<!-- LOCALIZAÇÃO -->
+
+<section id="localizacao" class="section">
+  <div class="container location-grid">
+
+    <div>
+      <div class="eyebrow">
+        Localização e correspondência
+      </div>
+
+      <h2>Consulte nosso endereço.</h2>
+
+      <p>
+        Confira o endereço cadastrado de
+        PAGNONCELLI & BATTISTIN ASSESSORIA CONTABIL S/S.
+      </p>
+
+      <div class="address-box">
+
+        <small>ENDEREÇO EMPRESARIAL</small>
+
+        <address>
+          PAGNONCELLI & BATTISTIN ASSESSORIA CONTABIL S/S<br>
+          R CAETANO MUNHOZ DA ROCHA, 570<br>
+          MENINO DEUS<br>
+          PATO BRANCO - PR<br>
+          85502-190<br>
+          Brasil
+        </address>
+
+      </div>
+
+      <a
+        class="button button-dark"
+        href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Caetano%20Munhoz%20da%20Rocha%20570%20Pato%20Branco%20PR"
+        target="_blank"
+        rel="noopener noreferrer">
+        Ver no Google Maps →
+      </a>
+
+      <p style="font-size:13px;margin-top:25px">
+        Antes de uma visita presencial, confirme
+        a possibilidade de atendimento.
+      </p>
+    </div>
+
+    <div class="map-box">
+      <div class="map-card">
+
+        <div class="map-pin">⌖</div>
+
+        <h3>
+          PAGNONCELLI & BATTISTIN ASSESSORIA CONTABIL S/S
+        </h3>
+
+        <p>
+          Pato Branco · Paraná · Brasil
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PERGUNTAS FREQUENTES -->
+
+<section id="duvidas" class="section faq">
+  <div class="container faq-grid">
+
+    <div>
+      <div class="eyebrow">
+        Perguntas frequentes
+      </div>
+
+      <h2>Dúvidas comuns.</h2>
+
+      <p>
+        Respostas rápidas sobre as informações
+        apresentadas neste site.
+      </p>
+    </div>
+
+    <div>
+
+      <details>
+        <summary>
+          Qual é o nome da organização?
+        </summary>
+        <p>
+          O nome da organização é
+          PAGNONCELLI & BATTISTIN ASSESSORIA CONTABIL S/S.
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          Qual é o endereço da empresa?
+        </summary>
+        <p>
+          R CAETANO MUNHOZ DA ROCHA, 570, MENINO DEUS,
+          PATO BRANCO - PR,
+          CEP 85502-190, Brasil.
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          Quando os dados foram verificados?
+        </summary>
+        <p>
+          A data de verificação informada é
+          19 de outubro de 2026.
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          Como enviar correspondência?
+        </summary>
+        <p>
+          Utilize o endereço empresarial
+          apresentado na seção Localização.
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          O site realiza pagamentos?
+        </summary>
+        <p>
+          Não. Este é um site institucional
+          informativo, sem pagamentos online.
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          Onde encontro as políticas do site?
+        </summary>
+        <p>
+          As políticas estão disponíveis
+          no rodapé desta página.
+        </p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- RODAPÉ -->
+
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <div class="logo">
+          <span class="logo-icon">JJR</span>
+          <span class="logo-text" style="color:white">
+            JJR CONTÁBIL
+            <small>INFORMAÇÕES DA EMPRESA</small>
+          </span>
+        </div>
+
+        <p>
+          Site institucional com informações da
+          organização e endereço cadastrado
+          para consulta e correspondência.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h4>Explore</h4>
+
+        <div class="footer-links">
+          <a href="#top">Início</a>
+          <a href="#sobre">Sobre nós</a>
+          <a href="#verificacao">Organização</a>
+          <a href="#informacoes">Informações</a>
+          <a href="#localizacao">Localização</a>
+          <a href="#duvidas">Dúvidas</a>
+        </div>
+
+      </div>
+
+      <div>
+
+        <h4>Informações e políticas</h4>
+
+        <div class="footer-links">
+          <a href="privacy-policy.html">Política de Privacidade</a>
+
+          <button type="button" data-policy="terms">
+            Termos de Uso
+          </button>
+
+          <button type="button" data-policy="cookies">
+            Política de Cookies
+          </button>
+
+          <button type="button" data-policy="accessibility">
+            Declaração de Acessibilidade
+          </button>
+        </div>
+
+        <address style="margin-top:25px">
+          R CAETANO MUNHOZ DA ROCHA, 570<br>
+          MENINO DEUS<br>
+          PATO BRANCO - PR<br>
+          85502-190<br>
+          Brasil
+        </address>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year">2026</span>
+      PAGNONCELLI & BATTISTIN ASSESSORIA CONTABIL S/S.
+      Todos os direitos reservados.
+    </div>
+
+  </div>
+</footer>
+
+<!-- JANELA DE POLÍTICAS -->
+
+<div id="modalBackdrop" class="modal-backdrop">
+
+  <div
+    class="modal"
+    id="policyModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+    tabindex="-1">
+
+    <button
+      type="button"
+      class="modal-close"
+      id="modalClose"
+      aria-label="Fechar">
+      ×
+    </button>
+
+    <div id="modalContent"></div>
+
+  </div>
+</div>
+
+<!-- AVISO DE COOKIES -->
+
+<div id="cookieBanner" class="cookie-banner">
+
+  <strong>Sua privacidade importa</strong>
+
+  <p>
+    Este site não utiliza ferramentas próprias de
+    publicidade ou análise de tráfego.
+    O armazenamento local é utilizado apenas
+    para lembrar sua confirmação deste aviso.
+  </p>
+
+  <button type="button" id="acceptCookies">
+    Entendi
+  </button>
+
+</div>
+
+<!-- JAVASCRIPT -->
+
+<script>
+(function () {
+  "use strict";
+
+  // Ano automático
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+  // Menu responsivo
+
+  const menuButton =
+    document.getElementById("menuButton");
+
+  const mainNav =
+    document.getElementById("mainNav");
+
+  menuButton.addEventListener("click", function () {
+    const isOpen = mainNav.classList.toggle("open");
+
+    menuButton.setAttribute(
+      "aria-expanded",
+      String(isOpen)
+    );
+
+    menuButton.textContent = isOpen ? "×" : "☰";
+  });
+
+  mainNav.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      mainNav.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.textContent = "☰";
+    });
+  });
+
+  // Políticas
+
+  const policies = {
+
+    privacy: `
+      <h2 id="modalTitle">Política de Privacidade</h2>
+      <p>Última atualização: 29 de outubro de 2026</p>
+
+      <h3>1. Finalidade</h3>
+      <p>
+        Este site apresenta informações institucionais
+        de PAGNONCELLI & BATTISTIN ASSESSORIA CONTABIL S/S.
+      </p>
+
+      <h3>2. Dados pessoais</h3>
+      <p>
+        Este site não possui cadastro de usuários,
+        formulário de contato ou processamento de
+        pagamentos.
+      </p>
+
+      <h3>3. Dados técnicos</h3>
+      <p>
+        Os provedores de hospedagem podem processar
+        dados técnicos necessários ao funcionamento
+        e à segurança do site.
+      </p>
+
+      <h3>4. Links externos</h3>
+      <p>
+        Links para serviços externos estão sujeitos
+        às políticas dos respectivos fornecedores.
+      </p>
+
+      <h3>5. Atualizações</h3>
+      <p>
+        Esta política poderá ser atualizada quando
+        necessário.
+      </p>
+    `,
+
+    terms: `
+      <h2 id="modalTitle">Termos de Uso</h2>
+      <p>Última atualização: 29 de outubro de 2026</p>
+
+      <h3>1. Objetivo</h3>
+      <p>
+        O site apresenta informações gerais de
+        PAGNONCELLI & BATTISTIN ASSESSORIA CONTABIL S/S.
+      </p>
+
+      <h3>2. Utilização</h3>
+      <p>
+        O visitante deve utilizar as informações
+        de maneira lícita e responsável.
+      </p>
+
+      <h3>3. Precisão</h3>
+      <p>
+        As informações podem ser corrigidas ou
+        atualizadas quando necessário.
+      </p>
+
+      <h3>4. Serviços externos</h3>
+      <p>
+        O site pode disponibilizar links para
+        plataformas de terceiros.
+      </p>
+
+      <h3>5. Responsabilidade</h3>
+      <p>
+        Estes termos não afastam direitos
+        garantidos pela legislação aplicável.
+      </p>
+    `,
+
+    cookies: `
+      <h2 id="modalTitle">Política de Cookies</h2>
+      <p>Última atualização: 29 de outubro de 2026</p>
+
+      <h3>1. Cookies</h3>
+      <p>
+        Este site não utiliza intencionalmente
+        cookies de publicidade ou ferramentas
+        próprias de análise de comportamento.
+      </p>
+
+      <h3>2. Armazenamento local</h3>
+      <p>
+        O navegador pode armazenar sua confirmação
+        de leitura do aviso de privacidade.
+      </p>
+
+      <h3>3. Preferências</h3>
+      <p>
+        Você pode limpar os dados armazenados
+        nas configurações do navegador.
+      </p>
+
+      <h3>4. Alterações</h3>
+      <p>
+        Caso novas tecnologias sejam implementadas,
+        esta política deverá ser atualizada.
+      </p>
+    `,
+
+    accessibility: `
+      <h2 id="modalTitle">
+        Declaração de Acessibilidade
+      </h2>
+
+      <p>Última atualização: 29 de outubro de 2026</p>
+
+      <h3>1. Compromisso</h3>
+      <p>
+        O site busca oferecer uma experiência
+        acessível e fácil de utilizar.
+      </p>
+
+      <h3>2. Recursos</h3>
+      <p>
+        O layout é responsivo e permite
+        navegação por teclado.
+      </p>
+
+      <h3>3. Melhorias</h3>
+      <p>
+        Os recursos de acessibilidade podem
+        ser aprimorados continuamente.
+      </p>
+    `
+  };
+
+  const backdrop =
+    document.getElementById("modalBackdrop");
+
+  const modal =
+    document.getElementById("policyModal");
+
+  const modalContent =
+    document.getElementById("modalContent");
+
+  const modalClose =
+    document.getElementById("modalClose");
+
+  let previousFocus = null;
+
+  function openModal(type) {
+    if (!Object.prototype.hasOwnProperty.call(policies, type)) {
+      return;
+    }
+
+    previousFocus = document.activeElement;
+
+    modalContent.innerHTML = policies[type];
+
+    backdrop.classList.add("open");
+
+    document.body.style.overflow = "hidden";
+
+    modalClose.focus();
+  }
+
+  function closeModal() {
+    backdrop.classList.remove("open");
+
+    document.body.style.overflow = "";
+
+    if (previousFocus) {
+      previousFocus.focus();
+    }
+  }
+
+  document
+    .querySelectorAll("[data-policy]")
+    .forEach(function (button) {
+      button.addEventListener("click", function () {
+        openModal(button.dataset.policy);
+      });
+    });
+
+  modalClose.addEventListener("click", closeModal);
+
+  backdrop.addEventListener("click", function (event) {
+    if (event.target === backdrop) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (!backdrop.classList.contains("open")) {
+      return;
+    }
+
+    if (event.key === "Escape") {
+      closeModal();
+      return;
+    }
+
+    if (event.key === "Tab") {
+      const focusable = Array.from(
+        modal.querySelectorAll(
+          'button, a[href], [tabindex]:not([tabindex="-1"])'
+        )
+      ).filter(function (element) {
+        return !element.disabled;
+      });
+
+      if (!focusable.length) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (
+        !event.shiftKey &&
+        document.activeElement === last
+      ) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+  });
+
+  // Aviso de privacidade
+
+  const cookieBanner =
+    document.getElementById("cookieBanner");
+
+  const acceptCookies =
+    document.getElementById("acceptCookies");
+
+  const storageKey =
+    "ajbageti_privacy_acknowledged";
+
+  try {
+    if (localStorage.getItem(storageKey) !== "yes") {
+      cookieBanner.classList.add("show");
+    }
+  } catch (error) {
+    cookieBanner.classList.add("show");
+  }
+
+  acceptCookies.addEventListener("click", function () {
+    try {
+      localStorage.setItem(storageKey, "yes");
+    } catch (error) {
+      // O aviso pode ser fechado sem armazenamento.
+    }
+
+    cookieBanner.classList.remove("show");
+  });
+
+})();
+</script>
+
+</body>
+</html>
